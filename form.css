@@ -1,0 +1,462 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+  margin:0;
+  padding: 0px;
+  box-sizing: border-box;
+  
+
+}
+.padre{
+  display: flex;
+  flex-flow: column nowrap; /*cubre hasta la parte de arriba*/
+}
+.barra-color {
+  background: rgba(0, 0, 0, 0.1); /* Color de fondo */
+  height: 150px; /* Altura de la barra de color */
+  width: 100%;
+  transform: translateY(-40%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Sombra sutil en la parte inferior */
+}
+
+
+.inner-header h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:25px;
+  text-overflow: ellipsis;
+  transform: translateY(-100%);
+  margin-top: 60px;
+  margin-right: 70px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  color: white;
+  
+}
+h2{
+  font-size: 100px;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #333333;
+  text-align: center;
+}
+
+.content-flex p{
+font-size: 20px; /*letra de la parte de abajo*/
+}
+.logo{
+  flex: 1 3 auto;  
+  display:flex;
+  width: 70px;
+  position: absolute; /*colocamos imagen en esquina superior izquierda*/
+  transform: translate(1200%,19%);
+
+ }
+  .logo a{
+     display: block;
+     width: 100%;
+     height: auto;
+    }
+  
+  .header {
+    background-color: rgba(0,0,0,.0.9);
+    background-image:url(https://www.ceac.es/sites/default/files/2021-03/diferencia-electricidad-electronica-scaled.jpg.webp);
+    background-position: center;    /*estas lineas nos sirven para acomodar el fondo en la cabezera*/
+    background-attachment: contain;
+    background-size:cover;
+    display: flex;
+    flex-flow: column nowrap;
+    height:639px; /*TAMAÑO DE LA IMAGEN*/
+}
+
+
+.inner-header {
+  height:120vh; /****************************esta es la medida de la parte azul donde esta el slide*/
+  width:100%;
+  margin: 20px, 20px, 20px, 20px;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+}
+
+.inner-header h1{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: right;
+  white-space: nowrap;
+  transform: translateY(-1000%);
+}
+/*********************estilos de formulario***************************/
+
+* {
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-font-smoothing:antialiased;
+  -moz-font-smoothing:antialiased;
+  -o-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+/* Contact Form Styles */
+h1 {
+  margin: 10px 0 0 0;
+  color:white;
+}
+h4{
+  margin: 0 0 20px 0;
+  color:white;
+}
+#contact-form {
+  background-color:rgba(72,72,72,0.5);
+  padding: 10px 20px 30px 20px;
+  width:500px;
+  height:540px;
+  float: left;
+  left: 50%;
+  position: absolute;
+  margin-top:30px;
+  margin-left: -260px;
+  border-radius:7px;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+  transform: translate(85%,11%);
+}
+#contact-form input{
+ 
+}
+#contact-form select,   
+#contact-form textarea,   
+#contact-form label { 
+  font-size: 15px;  
+  margin-bottom: 4px;
+  font-family: Arial, san-serif;
+  width:59%;    /*tamaño de los labels*/
+} 
+#contact-form input{
+width: 166%;
+}   
+#contact-form select{
+
+}  
+#contact-form textarea { 
+  width:140%;
+  background: #fff;
+  border: 0; 
+  -moz-border-radius: 4px;  
+  -webkit-border-radius: 4px;  
+  border-radius: 4px;
+  margin-bottom: 25px;  
+  padding: 5px;  
+}  
+#contact-form input:focus,   
+#contact-form select:focus,   
+#contact-form textarea:focus {  
+  background-color: #E5E6E7; 
+}  
+#contact-form textarea {
+  width:166%;
+  height: 150px;
+}
+#contact-form button[type="submit"] {
+  cursor:pointer;
+  width:96%;
+  border:none;
+  background:#991d1d;
+  background-image:linear-gradient(bottom, #8c1c1c 0%, #991d1d 52%);
+  background-image:-moz-linear-gradient(bottom, #8c1c1c 0%, #991d1d 52%);
+  background-image:-webkit-linear-gradient(bottom, #8c1c1c 0%, #991d1d 52%);
+  color:#FFF;
+  margin:0 0 5px;
+  padding:10px;
+  border-radius:5px;
+}
+#contact-form button[type="submit"]:hover {
+  background-image:linear-gradient(bottom, #cf8abe 0%, #997487 52%);
+  background-image:-moz-linear-gradient(bottom, #9b7a89 0%, #aa8f9c 52%);
+  background-image:-webkit-linear-gradient(bottom, #eec5d8 0%, #d4bbc8 52%);
+  -webkit-transition:background 0.3s ease-in-out;
+  -moz-transition:background 0.3s ease-in-out;
+  transition:background-color 0.3s ease-in-out;
+}
+#contact-form button[type="submit"]:active {
+  box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
+}
+input:required, textarea:required {  
+  box-shadow: none;
+  -moz-box-shadow: none;  
+  -webkit-box-shadow: none;  
+  -o-box-shadow: none;  
+} 
+#contact-form .required {  
+  font-weight:bold;  
+  color: #E5E6E7;      
+}
+
+/* Hide success/failure message
+  (especially since the php is missing) */
+#failure, #success {
+  color: #6EA070; 
+  display:none;  
+}
+
+/* Make form look nice on smaller screens */
+@media only screen and (max-width: 580px) {
+  #contact-form{
+     left: 3%;
+     margin-right: 3%;
+     width: 88%;
+     margin-left: 0;
+     padding-left: 3%;
+     padding-right: 3%;
+  }
+}
+
+
+/*******************************************************/
+.waves {
+  position:relative;
+  height: 100%;/**/
+  width: 150%;
+  height:20vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:200px;
+  max-height:600px;
+  transform: translateY(-50%);
+}
+
+.content {  /*parte de abajo*/
+  position:relative;
+  height:10vh;
+  text-align:center;
+  background-color:black;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:9px;
+  }
+}
+ /* estilos-------------------menu navegacion----*/
+ nav {
+    margin : 50px auto;
+    width  : 290px;
+    transform: translateY(37%);/*mueve las cajas de capaci, gestion edu, contactanos hacia abajo*/
+    border: radius 50px;
+    }
+  
+  menu {
+    border-radius : 5px;
+  }
+
+ 
+  
+  menu:after , menu:before {
+    display : block;
+    content : ' ';
+    border-radius: 5%;
+  }
+  
+  menu:after {
+    clear : both;
+  }
+  
+  li {
+    list-style-type : none;
+    color:white;
+    background: linear-gradient(rgba(220,220,255,0.4) 85%, rgba(255,255,255,0.5) 100%);
+    float   : left;
+    cursor  : pointer;
+    padding : 3px 10px;
+    border-top    : 5px solid rgba(200,200,255,0.5);
+    border-bottom : 5px solid rgba(50,50,50,0.4);
+    margin-bottom: 5px;
+    transform: translateX(100%);
+  }
+  
+  li:first-child {
+    border-radius : 5px 0 0 5px;
+  }
+  
+  li:last-child {
+    border-radius : 0 5px 5px 0;
+  }
+  
+  .barra-color  a{
+    display : block;
+    padding : 2px 3px;
+    font-size : 26px;
+    font-family: 'Lato', sans-serif;
+    text-decoration : none;
+    border-radius   : 5px;
+    position        : relative;
+    top   : 0;
+    color :white;			
+    transition : all .4s;
+  }
+  
+  li:hover a {
+    top   : 25px; /*MOVER EL EFECTO DEL BOTON HACIA ABAJO*/
+    color : #4eacff;
+    background-color: #fff;
+    box-shadow : 0 0 10px 0 rgba(255, 255, 255, 0.7);
+    transition : all .4s;
+  }
+  
+  li a:after {
+    display  : block;
+    content  : '';
+    position : absolute;
+    top  : 100%;
+    left : 42%;
+    border-style : solid;
+    border-color : transparent;
+    border-width : 7px 7px 0 7px;
+    transition   : all .4s;
+  }
+  
+  li:hover a:after {
+    border-color : white transparent transparent transparent;
+    transition   : all .4s;
+  }
+
+  .menu2 a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*ESTILO LETRA MENU NAVEGACION*/
+    font-size   : 16px;
+    font-style :normal;
+    text-transform : capitalize;
+    border-radius: 20px;
+  }
+  
+  .menu2 li {
+    border-right  : 5px solid rgba(200,200,255,0.5);
+    border-left   : 5px solid rgba(40,40,40,0.2); 
+    border-radius: 20px;
+  }
+  
+  /*************************************/
+  
+
+.menu2 {
+    width : 800px;
+  }
+  
+  .menu2 a {
+    font-family : georgia;
+    font-size   : 14px;
+    font-style  : italic;
+    text-transform : capitalize;
+    border-radius: 20px;
+  }
+  
+  .menu2 li {
+    border-right  : 3px solid rgba(200,200,255,0.5);
+    border-left   : 3px solid rgba(40,40,40,0.2); 
+    border-radius: 20px;
+  }
+  
+  .selected {
+    top   : -20px;
+    color : #4eacff;
+    background-color:white;
+    box-shadow : 0 0 5px 0 rgba(255, 255, 255, 0.7);
+    transition : all .4s;
+  }
+  
+  .selected:after {
+    border-color : white transparent transparent transparent;
+    transition   : all .4s;
+  }
+  
+  a.fun {
+    display :none;
+  }
+
+  
+
+
+
+/****************************************************************/
+.titulo1{
+  position: relative;
+  font-family: sans-serif;
+  color:#fff;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 5px;
+  overflow: hidden;
+  background: linear-gradient(90deg,black,grey,black);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 10s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:rgb(255,255,255,0);
+}
+@keyframes animate{
+  0%{
+    background-position: -700%;
+  }
+   100%{
+    background-position: 700%;
+  }
+}
+
+.contac{
+  transform: translateX(1550%);
+}
+.footer{
+  background:grey;
+  display: flex;
+  justify-content: center;
+}
+.pie{
+  background: rgba(0,0,0,.1);
+  width: 300px;
+} 
+.footer a{
+  color:#333333;
+}
